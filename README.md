@@ -1,3 +1,24 @@
-# Blogging App
+# README
 
-## This was made in April 2020 using ruby on rails and react in order to teach myself both those frameworks. I am building this based on tutorials from the Odin Projects and the official Rails documentation.
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
