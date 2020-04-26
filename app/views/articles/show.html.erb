@@ -1,13 +1,48 @@
-<h1><%= @article.title %></h1>
-<p><%= @article.body %></p>
-<%= render partial: 'comments/form' %>
-<h3>Comments</h3>
-<%= render partial: 'articles/comment', collection: @article.comments %>
+<div class="header">
+	<h1>Yash Dani</h1>
 
-<%= link_to "Back to Articles", articles_path %>
-<br>
-<%= link_to "this one isn't that good. delete it.", article_path(@article), method: :delete %>
-<br>
-<%= link_to "edit", edit_article_path(@article) %>
-<br>
+	<style>
+	  .header {
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    background: #29D04E;
+	    color:#fff;
+	    height: 10%;
+	    text-align:center;
+	    vertical-align:middle;
+            display: table-cell;
 
+	}
+	</style>
+	<script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+</div>
+<div class = "content">
+	<h1 class="title"><%= @article.title %></h1>
+	<p class="body"><%= @article.body %></p>
+	<style>
+	    .title{
+		font-family: 'Cabin', sans-serif;
+		font-size: 40px;
+	    }
+	    .body{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 25px;
+	    }
+            .content{
+                padding-top: 10%;
+            }
+	</style>
+
+	<%= render partial: 'comments/form' %>
+	<h3>Comments</h3>
+	<%= render partial: 'articles/comment', collection: @article.comments %>
+
+	<%= link_to "Back to Articles", articles_path %>
+	<br>
+	<%= link_to "this one isn't that good. delete it.", article_path(@article), method: :delete %>
+	<br>
+	<%= link_to "edit", edit_article_path(@article) %>
+	<br>
+</div>
