@@ -1,2 +1,3 @@
 class Article < ApplicationRecord
-end
+    has_many :comments
+end 
