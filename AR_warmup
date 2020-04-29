@@ -1,0 +1,23 @@
+1.
+Models:
+Courses
+  id :integer
+  created_at :datetime
+  updated_at :datetime
+  title :string
+  description :text
+
+  has_many lessons
+
+Lessons 
+  id :integer
+  created_at :datetime
+  updated_at :datetime
+  title :string 
+  body :text
+
+  belongs_to author 
+
+
+2.
+
